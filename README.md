@@ -24,5 +24,8 @@ Disa pamje nga ekzekutimi i programit:
 
 ![bookingtable databaza projekti](https://github.com/diellzapp/UEB2_2023_GR27/assets/122102145/f02e590b-6faf-43a7-bb03-019ec30fa3cc)
 
-Er Diagrami:
+
+
+
+
 ![erdiagrami](https://github.com/diellzapp/UEB2_2023_GR27/assets/122102145/2afcefa1-6bb3-4506-9eea-9c1ae1ed069d)
