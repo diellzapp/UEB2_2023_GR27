@@ -1,0 +1,35 @@
+
+
+<?php
+
+
+include "qrlib.php"
+
+
+QRcode::png('PHP QR Code :)', 'test.png', 'L', 4, 2);
+
+
+QRcode::png('PHP QR Code :)');
+
+
+QRtools::timeBenchmark();
+
+
+QRtools::buildCache();
+
+
+$tab = $qr->encode('PHP QR Code :)');
+QRspec::debug($tab, true);
+
+
+Then use similar as example 
+
+<?php
+
+$style = array(
+    'border' => true,
+    'padding' => 4,
+    'fgcolor' => array(0,0,0),
+    'bgcolor' => false, 
+);
+$pdf->write2DBarcode('PHP QR Code :)', 'QR,L', '', '', 30, 30, $style, 'N');
