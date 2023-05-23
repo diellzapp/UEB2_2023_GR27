@@ -98,3 +98,20 @@ if (isset($_POST['but_submit'])) {
     }
 }
 ?>
+
+<?php
+
+$endpoint = "https://api.openweathermap.org/data/2.5/weather";
+$apiKey = "2a1d1e901fd14da5a91e00522576195d";
+
+
+
+$city = "Pristina";
+$countryCode = "xk";
+$requestUrl = $endpoint . "?q=" . $city . "," . $countryCode . "&appid=" . $apiKey;
+$response = file_get_contents($requestUrl);
+$weatherData = json_decode($response, true);
+$temperature = $weatherData["main"]["temp"];
+$description = $weatherData["weather"][0]["description"];
+echo "The temperature in " . $city . " is " . $temperature . " Kelvin. The weather is " . $description . ".";
+?>
