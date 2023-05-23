@@ -129,7 +129,7 @@ if (isset($_SESSION['username'])) {
     <header></header>
     <?php
 
-if (!isset($_COOKIE['session_id']) || $_COOKIE['session_id'] === '' ) {
+if (!isset($_COOKIE['username'])  ) {
     if (basename($_SERVER['HTTP_REFERER']) === 'profile.php' && basename($_SERVER['REQUEST_URI']) === 'login.php') {
         echo 'You have been logged out.';
     }
