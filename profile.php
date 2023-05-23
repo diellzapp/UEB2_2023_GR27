@@ -14,7 +14,7 @@
 </head>
 <body>
 <?php
-// Startimi i session
+
 $delay = 2;
 
 // Caktimi i cookie me delay time
